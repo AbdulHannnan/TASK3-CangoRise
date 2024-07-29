@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+:root{
+    --background: rgb(24 , 24 , 24);
+    --secound-background : rgb(21 , 21 , 21);
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(24 , 24 , 24);;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding:2em 15% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 100000;
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+
+}
+nav ul a{
+    color: white;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+nav ul a:hover{
+    opacity: 1;
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+.btn{
+    padding: 0.5em 1em;
+    color:white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border:2px solid white ;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+.btn:hover{
+    background-color: white;
+    color: rgba(15, 15, 15, 0.5) ;
+}
+span{
+    background: linear-gradient(to right , #6cff52 , #3ec5ff);
+    background-clip:text ;
+    color: transparent;
+
+}
+#menu{
+    color: white;
+    font-size: 3em;
+    display: none;
+    
+}
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+#home img{
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 3em;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+
+}
+.info h1{
+    font-size: 5em;
+    font-weight: 500;
+
+}
+.info h3{
+    font-size: 2em;
+    font-weight: 400;
+
+}
+.info p{
+    font-size: 1em;
+    font-weight: 300;
+}
+.btn{
+    display: flex;
+    gap: 1em;
+}
+.btn .btn:nth-of-type(2){
+    background-color: white;
+    color: rgba(15, 15, 15, 0.5) ;
+}
+.btn .btn:nth-of-type(2):hover{
+    background-color: black;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+    background-color:rgba(15, 15, 15, 0.5) ;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom , #6cff52 , #3ec5ff);
+}
+#about{
+    background-color:rgba(15, 15, 15, 0.5) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+
+}
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+.about-box h1{
+    font-size: 5em;
+}
+.about-box p{
+    color: white;
+    opacity: 0.8;
+
+}
+.skills{
+    display: flex;
+    text-align: left;
+    gap: 10em;
+
+}
+.skills ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    align-items: baseline;
+
+}
+.skills ul li span{
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.3em;
+    transition: 0.3s ease-in-out;
+    align-items: center;
+
+}
+.skills ul li span:hover{
+    transform: translateX(10px);
+
+}
+.skills ul li i{
+    font-size: 1.2em;
+}
+.about-box h2{
+    font-size: 2,5em;
+
+}
+#services{
+    background-color:rgba(15, 15, 15, 0.5) ;
+}
+#service p{
+    color: white;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2;
+    padding-bottom: 3em;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 1.3em;
+
+}
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(233px , 1fr));
+    gap: 1em;
+
+}
+.box{
+    border: 3px solid rgb(49 , 49 , 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 1em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+.box:hover{
+    border: 3px solid rgb(100, 100, 100);
+
+}
+.box p{
+    opacity: 0.8;
+}
+.box h1{
+    font size: 2em;
+}
+.box img{
+    min-width: 25px;
+    border-radius: 0.5em;
+}
+#contact{
+ background-color:rgba(15, 15, 15, 0.5) ;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+
+}
+form input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.input-box span{
+    font-size: 2em;
+}
+form input{
+    font-size: 1.3em;
+    padding: 1em 5em;
+    border: none;
+    border-radius: 0.5em;
+    outline: none;
+}
+
+form input:focus{
+    background-color: rgb(229, 229, 229);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    bottom: 0;
+    background-color:rgb(49 , 49 , 49) ;
+    width: 100%;
+    padding: 5em 15%;
+}
+.colum-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.colum-box{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.colum-box i{
+    font-size: 2em;
+}
+.colum-box span{
+    font-size: 1.2em;
+}
+.colum-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+    max-width: 500px;
+}
+.colum-right span{
+    font-size: 1.3em;
+}
+.colum-box .social-icons{
+ display: flex;
+ align-items: baseline;
+ justify-content: left;
+ 
+
+}
+.colum-right .social-icons i{
+    font-size: 2em;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    gap: 1em;
+
+}
+.social-icons {
+    text-align: center; /* Center the icons */
+}
+
+.social-icons span {
+    display: inline-block; /* Ensure icons are inline but treated as block elements */
+    margin: 0 15px; /* Adjust the spacing as needed */
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 24px; /* Adjust the size of the icons */
+    color: #000; /* Set the color of the icons */
+    transition: color 0.3s; /* Add a transition for hover effect */
+}
+
+.social-icons i:hover {
+    color: whitesmoke; /* Change color on hover */
+}
